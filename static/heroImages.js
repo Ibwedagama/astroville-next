@@ -7,13 +7,13 @@ const HERO_IMAGES = [
   },
   {
     id: 2,
-    src: 'https://picsum.photos/id/1005/1280/720',
+    src: 'https://picsum.photos/id/1018/1280/720',
     alt: 'Image 2',
     caption: 'Wedding of C and D'
   },
   {
     id: 3,
-    src: 'https://picsum.photos/id/1011/1280/720',
+    src: 'https://picsum.photos/id/1005/1280/720',
     alt: 'Image 3',
     caption: 'Wedding of E and F'
   }

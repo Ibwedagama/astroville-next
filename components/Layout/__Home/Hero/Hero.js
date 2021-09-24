@@ -8,7 +8,7 @@ import HERO_IMAGES from '../../../../static/heroImages'
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [sliderRef, slider] = useKeenSlider({
-    initial: 0,
+    initial: 1,
     loop: true,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
@@ -16,8 +16,8 @@ const Hero = () => {
   })
 
   return (
-    <section className="h-screen">
-      <div className="navigation-wrapper h-3/4 md:h-full lg:h-full">
+    <section className="hero-slider md:h-screen lg:h-screen">
+      <div className="navigation-wrapper h-full">
         <div ref={sliderRef} className="keen-slider h-full">
           {HERO_IMAGES.map((image) => (
             <div className="keen-slider__slide" key={image.id}>
@@ -53,7 +53,7 @@ const Hero = () => {
             className="absolute w-full p-8 flex justify-center bottom-0 md:justify-end"
           >
             <p className="font-display text-white text-center">
-              <strong>{currentSlide + 1}</strong> / {slider.details().size}
+              <strong>{currentSlide}</strong> / {HERO_IMAGES.length}
             </p>
           </div>
         </div>

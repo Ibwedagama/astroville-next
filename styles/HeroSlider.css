@@ -1,3 +1,7 @@
+.hero-slider {
+  height: 525px;
+}
+
 [class^="number-slide"],
 [class*=" number-slide"] {
   background: grey;

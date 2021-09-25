@@ -24,7 +24,7 @@ export default function Home() {
       <Portfolio/>
       <Clients/>
       <AboutUs/>
-      <QuoteBlock/>
+      <QuoteBlock quote="Sky is Blue & Rose is Red" author="Astroville" />
     </>
   )
 }

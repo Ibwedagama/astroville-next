@@ -14,7 +14,7 @@ const FloatingButton = () => {
     <>
       <section
         className="
-        absolute z-10 bottom-0 w-full py-5 flex items-center justify-center gap-4 bg-brand-pink
+        fixed z-10 bottom-0 w-full py-5 flex items-center justify-center gap-4 bg-brand-pink
         md:hidden
         "
       >

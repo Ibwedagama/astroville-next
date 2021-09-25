@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Spartan:wght@400;500;600;700&display=swap');
 
 @import './HeroSlider.css';
+@import './ServiceSlider.css';
 
 html,
 body {

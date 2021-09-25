@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from '../components/Layout/__Home/Hero/Hero'
 import WhatWeDo from '../components/Layout/__Home/WhatWeDo/WhatWeDo'
+import OurServices from '../components/Layout/__Home/OurServices/OurServices'
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       </Head>
 
       <Hero />
-      <WhatWeDo />
+
+      <div className="flex flex-col gap-8 md:flex-row">
+        <WhatWeDo />
+        <OurServices />
+      </div>
     </>
   )
 }

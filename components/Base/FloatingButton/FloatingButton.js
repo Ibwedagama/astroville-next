@@ -25,7 +25,7 @@ const FloatingButton = () => {
         <p className="text-white font-display font-semibold">Hubungi Kami!</p>
       </section>
 
-      <section className="absolute z-10 bottom-0 w-full justify-end md:flex">
+      <section className="hidden absolute z-10 bottom-0 w-full justify-end md:flex">
         <div
           className="h-16 flex items-center justify-center mr-8 mb-8 cursor-pointer"
           onMouseOver={handleMouseEnter}

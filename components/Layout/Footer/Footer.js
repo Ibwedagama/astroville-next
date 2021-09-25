@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer
       className="
-      grid grid-cols-1 px-5 pt-8 pb-48 py-12 bg-brand-dark items-center justify-items-center gap-16
+      grid grid-cols-1 px-5 pt-8 pb-32 py-12 bg-brand-dark items-center justify-items-center gap-16
       md:px-8 md:py-8 md:grid-cols-4 md:gap-8 md:items-start md:justify-items-start md:gap-y-16
       lg:px-20 lg:py-20
       "

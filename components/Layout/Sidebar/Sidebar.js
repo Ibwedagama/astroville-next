@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen, handleSidebarToggle }) => {
   return (
     <div
       className={
-        `absolute w-screen h-screen inset-0 bg-brand-dark z-20 flex flex-col p-8 pt-0 transition-all duration-300 ease-in-out ${isOpen ? '' : '-mx-100'}`
+        `absolute w-screen h-screen inset-0 bg-brand-dark z-20 flex flex-col p-8 pt-0 transition-margin duration-300 ease-in-out ${isOpen ? '' : '-mx-100'}`
       }
     >
       <div className="flex justify-between w-full border-b-2 border-opacity-50 py-5 mb-16">

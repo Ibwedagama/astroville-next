@@ -4,6 +4,8 @@ import WhatWeDo from '../components/Layout/__Home/WhatWeDo/WhatWeDo'
 import OurServices from '../components/Layout/__Home/OurServices/OurServices'
 import Portfolio from '../components/Layout/__Home/Portfolio/Portfolio'
 import Clients from '../components/Layout/__Home/Clients/Clients'
+import AboutUs from '../components/Layout/__Home/AboutUs/AboutUs'
+import QuoteBlock from '../components/Layout/QuoteBlock/QuoteBlock'
 
 export default function Home() {
   return (
@@ -15,15 +17,14 @@ export default function Home() {
       </Head>
 
       <Hero />
-
       <div className="flex flex-col gap-8 md:flex-row">
         <WhatWeDo />
         <OurServices />
       </div>
-
       <Portfolio/>
-
       <Clients/>
+      <AboutUs/>
+      <QuoteBlock/>
     </>
   )
 }

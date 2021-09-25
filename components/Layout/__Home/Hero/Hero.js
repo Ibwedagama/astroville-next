@@ -8,7 +8,7 @@ import HERO_IMAGES from '../../../../static/heroImages'
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [sliderRef, slider] = useKeenSlider({
-    initial: 1,
+    initial: 0,
     loop: true,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
@@ -53,7 +53,7 @@ const Hero = () => {
             className="absolute w-full p-8 flex justify-center bottom-0 md:justify-end"
           >
             <p className="font-display text-white text-center">
-              <strong>{currentSlide}</strong> / {HERO_IMAGES.length}
+              <strong>{currentSlide + 1}</strong> / {HERO_IMAGES.length}
             </p>
           </div>
         </div>

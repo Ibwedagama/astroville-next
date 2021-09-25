@@ -1,0 +1,54 @@
+import React, { useState } from 'react'
+import Link from 'next/link'
+import Sidebar from '../Sidebar/Sidebar'
+import BrandLogo from '../../Base/Logo/BrandLogo'
+import { BiMenu } from 'react-icons/bi'
+
+import NAV_LINK from '../../../static/navLink'
+
+const Navbar = () => {
+  const [isSidebar, setSidebar] = useState(false)
+
+  const handleSidebarToggle = () => {
+    setSidebar(!isSidebar)
+  }
+
+  return (
+    <>
+      <header
+        className="
+      fixed px-5 w-full bg-transparent z-10
+      md:px-8 lg:px-20
+      "
+      >
+        <nav className="flex py-5 border-b-2 justify-between border-opacity-50">
+          {/* Astroville Logo */}
+          <BrandLogo type="light" width="80px" height="30px" />
+
+          {/* Navbar Link */}
+          <ul
+            className="
+          hidden font-display font-medium text-white text-sm leading-0 items-center
+          md:inline-flex md:gap-16
+          "
+          >
+            {NAV_LINK.map((link) => (
+              <li key={link.id}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Hamburger Menu */}
+          <button className="inline-flex bg-transparent md:hidden" onClick={handleSidebarToggle}>
+            <BiMenu className="text-4xl text-white" />
+          </button>
+        </nav>
+      </header>
+
+      <Sidebar isOpen={isSidebar} handleSidebarToggle={handleSidebarToggle}/>
+    </>
+  )
+}
+
+export default Navbar

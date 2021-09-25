@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         'display': ['Spartan'],
         'body': ['Comfortaa']
+      },
+      margin: {
+        '-100': '-100%'
       }
     }
   },

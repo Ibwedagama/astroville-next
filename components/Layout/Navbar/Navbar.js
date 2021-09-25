@@ -17,9 +17,9 @@ const Navbar = () => {
     <>
       <header
         className="
-      fixed px-5 w-full bg-transparent z-10
-      md:px-8 lg:px-20
-      "
+        fixed px-5 w-full bg-transparent z-10
+        md:px-8 lg:px-20
+        "
       >
         <nav className="flex py-5 border-b-2 justify-between border-opacity-50">
           {/* Astroville Logo */}
@@ -28,13 +28,15 @@ const Navbar = () => {
           {/* Navbar Link */}
           <ul
             className="
-          hidden font-display font-medium text-white text-sm leading-0 items-center
-          md:inline-flex md:gap-16
-          "
+            hidden font-display font-medium text-white text-sm leading-0 items-center
+            md:inline-flex md:gap-16
+            "
           >
             {NAV_LINK.map((link) => (
               <li key={link.id}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href}>
+                  <a className="hover:text-brand-pink transition-colors duration-300 ease-in-out">{link.label}</a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -46,7 +48,7 @@ const Navbar = () => {
         </nav>
       </header>
 
-      <Sidebar isOpen={isSidebar} handleSidebarToggle={handleSidebarToggle}/>
+      <Sidebar isOpen={isSidebar} handleSidebarToggle={handleSidebarToggle} />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Layout/__Home/Hero/Hero'
+import WhatWeDo from '../components/Layout/__Home/WhatWeDo/WhatWeDo'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Hero />
-      <Hero />
+      <WhatWeDo />
     </>
   )
 }

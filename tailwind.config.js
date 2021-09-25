@@ -7,6 +7,7 @@ module.exports = {
         'brand-dark': '#262626',
         'brand-pink': '#FF528C',
         'brand-gray': '#EEEEEE',
+        'brand-text': '#7D7D7D'
       },
       fontFamily: {
         'display': ['Spartan'],

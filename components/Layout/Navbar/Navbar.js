@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Sidebar from '../Sidebar/Sidebar'
 import BrandLogo from '../../Base/Logo/BrandLogo'
@@ -8,6 +9,14 @@ import NAV_LINK from '../../../static/navLink'
 
 const Navbar = () => {
   const [isSidebar, setSidebar] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setSidebar(false)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+  }, [])
 
   const handleSidebarToggle = () => {
     setSidebar(!isSidebar)

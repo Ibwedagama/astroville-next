@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Hero from '../../components/Layout/__About/Hero/Hero'
 import QuoteBlock from '../../components/Layout/QuoteBlock/QuoteBlock'
+import Members from '../../components/Layout/__About/Members/Members'
 
 const AboutUs = () => {
   return (
@@ -18,6 +19,7 @@ const AboutUs = () => {
         the important things in your life`}
         author="Astroville"
       />
+      <Members></Members>
     </>
   )
 }

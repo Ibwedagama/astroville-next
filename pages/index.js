@@ -3,6 +3,7 @@ import Hero from '../components/Layout/__Home/Hero/Hero'
 import WhatWeDo from '../components/Layout/__Home/WhatWeDo/WhatWeDo'
 import OurServices from '../components/Layout/__Home/OurServices/OurServices'
 import Portfolio from '../components/Layout/__Home/Portfolio/Portfolio'
+import Clients from '../components/Layout/__Home/Clients/Clients'
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       </div>
 
       <Portfolio/>
+
+      <Clients/>
     </>
   )
 }

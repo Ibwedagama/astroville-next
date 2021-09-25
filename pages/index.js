@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Hero from '../components/Layout/__Home/Hero/Hero'
 import WhatWeDo from '../components/Layout/__Home/WhatWeDo/WhatWeDo'
 import OurServices from '../components/Layout/__Home/OurServices/OurServices'
+import Portfolio from '../components/Layout/__Home/Portfolio/Portfolio'
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
         <WhatWeDo />
         <OurServices />
       </div>
+
+      <Portfolio/>
     </>
   )
 }
